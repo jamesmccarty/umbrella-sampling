@@ -27,4 +27,5 @@ for ((i=0;i<27;i++)); do
   gmx mdrun -deffnm prd.$i -plumed plumed.$i.dat 
   mv COLVAR COLVAR-prd.$i
 
+  echo 'COLVAR-prd'.$i $x '5000.0' >> metadata.dat
 done
