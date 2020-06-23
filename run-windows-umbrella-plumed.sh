@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+rm -f metadata.dat
+
 for ((i=0;i<27;i++)); do
 
   x=$(echo "0.05*$(($i+1))" | bc);
